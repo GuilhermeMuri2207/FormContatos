@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <title>Contato</title>
+</head>
+
+<body>
+        <form action="" autocomplete="off"> <!-- autocomplete pode ser individual da tag input ou geral sendo no form -->
+        <fieldset>
+            
+            <legend>Formulario de Contato</legend>
+
+            <label for="name">Nome Completo</label>
+            <input type="text" name="name" id="name" required placeholder="Digite seu nome completo">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Digite seu Email">
+
+            <label for="subject">Assunto</label>
+            <input type="text" name="subject" id="subject">
+
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" rows="7" required maxlength="1000" minlength="20" placeholder="Digite a sua Mensagem"></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+
+        </fieldset>
+    </form>    
+</body>
+</html>

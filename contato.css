@@ -1,0 +1,79 @@
+html {
+    background-color: #181818;                       /* Define a cor de fundo do documento HTML como preto escuro. */
+    font-family: "Helvetica Neue", Arial, sans-serif;  /* Define a família de fontes padrão para o texto. */
+    color: white;                                    /* Define a cor do texto como branca. */
+}
+
+body {
+    display: flex;                                  /* Configura o corpo do documento como um container flexível. */
+    justify-content: center;                        /* Alinha o conteúdo ao centro horizontalmente. */
+    align-items: center;                            /* Alinha o conteúdo ao centro verticalmente. */
+    min-height: 100vh;                              /* Define a altura mínima do corpo como 100% da altura da viewport. */
+    margin: 0;                                      /* Remove a margem padrão do corpo. */
+}
+
+form {
+    width: 90%;                                     /* Define a largura do formulário como 90% do container pai. */
+    min-width: 28.12em;                             /* Define a largura mínima do formulário. */
+    max-width: 36em;                                /* Define a largura máxima do formulário. */
+    background-color: #0e1010;                    /* Define a cor de fundo do formulário como um cinza muito escuro. */
+    padding: 1em;                                   /* Adiciona um espaçamento interno (padding) ao formulário de 1em. */
+}
+
+fieldset {
+    border: none;                                   /* Remove a borda ao redor do conjunto de campos. */
+    padding: 0;                                     /* Remove o espaçamento interno. */
+    margin: 0;                                      /* Remove a margem externa. */
+}
+
+label,
+input,
+textarea {
+    display: block;                                 /* Faz com que os elementos ocupem toda a largura disponível. */
+    width: 100%;                                    /* Define que os elementos ocupem 100% da largura do container pai. */
+    box-sizing: border-box;                         /* Inclui padding e borda no cálculo da largura e altura do elemento. */
+}
+
+input,
+textarea {
+    background-color: rgba(0, 0, 0, .3);          /* Define uma cor de fundo semitransparente preta. */
+    border: 2px solid transparent;                  /* Define uma borda transparente com 2 pixels de espessura. */
+    border-bottom-color: #bbb;                    /* Define a cor da borda inferior como cinza claro. */
+    padding: .76em;                                 /* Adiciona espaçamento interno para aumentar a área clicável. */
+    margin: .6em 0 2.5em;                           /* Adiciona margens para espaçar os elementos. */
+    color: white;                                 /* Define a cor do texto dentro dos campos como branca. */
+    outline: 0;                                     /* Remove o contorno ao redor dos campos quando focados. */
+}
+
+input:invalid:focus,
+textarea:invalid:focus {
+    border-bottom: 2px solid #ff000d;               /* Define a cor da borda inferior como vermelha se o campo for inválido. */
+}
+
+input:valid:focus,
+textarea:valid:focus {
+    border-bottom: 2px solid #0ec72a;               /* Define a cor da borda inferior como verde se o campo for válido. */
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 2px solid #8e999a;               /* Define a cor da borda inferior como cinza escuro ao focar no campo. */
+    background-color: #2a2727;                      /* Altera a cor de fundo para um tom de cinza escuro ao focar. */
+}
+
+legend {
+    padding: .5em;                                  /* Adiciona espaçamento interno ao texto do legend. */
+    text-align: center;                             /* Centraliza o texto dentro do legend. */
+    font-weight: bold;                              /* Define o texto como negrito. */
+    color: #8e999a;                               /* Define a cor do texto do legend para um tom de cinza escuro. */
+    font-size: 1.4em;                               /* Define o tamanho da fonte do legend como ligeiramente maior que o padrão. */
+}
+
+.btn {
+    background-color: #2a2727;                    /* Define a cor de fundo do botão como um tom de cinza escuro. */
+    color: white;                                 /* Define a cor do texto dentro do botão como branco. */
+    cursor: pointer;                                /* Muda o cursor para uma mãozinha ao passar sobre o botão. */
+    padding: .8em;                                  /* Adiciona espaçamento interno ao botão. */
+    font-size: 1.2em;                               /* Define o tamanho da fonte dentro do botão. */
+    border: none;                                   /* Remove qualquer borda ao redor do botão. */
+}
